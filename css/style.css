@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-success {
+    color: yellowgreen;
+}
+
+h1, h2 {
+    padding: 16px 0;    
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(6, 6, 97);
+    color: whitesmoke;
+}
+
+.container {
+    height: 100vh;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.item-area, .amount-area {
+    padding: 16px 0;
+}
+
+.item-area > label {
+    margin-right: 10px;
+}
+
+.item-area > input {
+    width: 80%;
+}
+
+.amount-area > label {
+    margin-right: 10px;
+}
+
+.amount-area > input {
+    margin-right: 16px;
+}
+
+.amount-area > input[type = "date"] {
+    width: 30%;
+}
+
+
+input{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    background-color: yellowgreen;
+    border: none;
+    color: white;
+    margin: 16px 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    color: yellowgreen;
+    background-color: transparent;
+    border: 1px yellowgreen solid;
+}
+
+/* Table section styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 8px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid yellowgreen;
+}
+
+th {
+    color: yellowgreen;
+}
