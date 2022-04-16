@@ -12,6 +12,11 @@
     color: yellowgreen;
 }
 
+.my-2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 h1, h2 {
     padding: 16px 0;    
 }
