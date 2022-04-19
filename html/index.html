@@ -16,13 +16,13 @@
             <h2 class="text-center text-success">Add a new item:</h2>
             <div class="item-area">
                 <label for="item-name"> <strong>Item:</strong> </label>
-                <input type="text" name="items" placeholder="Where was the expense made?">
+                <input type="text" name="items" placeholder="Where was the expense made?" required>
             </div>
             <div class="amount-area">
                 <label for="date"> <strong>Date:</strong> </label>
                 <input type="date" name="date" id="">
                 <label for="date"> <strong>Amount:</strong> </label>
-                <input type="text" name="amount" id="">
+                <input type="text" name="amount" id="" required>
             </div>
 
             <div class="button-area">
@@ -39,19 +39,9 @@
                         <th>Amount (Kes)</th>
                     </tr>
                 </div>
-                <div class="table-body">
-                    <tr>
-                        <td>This</td>
-                        <td>is </td>
-                        <td>it</td>
-                    </tr>
-                </div>
-                <div class="table-total">
-                    <tr>
-                        <th>Item</th>
-                        <th>Date</th>
-                        <th>Amount (Kes)</th>
-                    </tr>
+
+                <div id="table-body">
+                    
                 </div>
                 
             </table>

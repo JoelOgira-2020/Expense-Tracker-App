@@ -1,33 +1,36 @@
 const form = document.querySelector('.expense-form');
 const table = document.querySelector('table');
+const tableBody = document.getElementById('table-body');
+const tableTotal = document.getElementById('table-total');
 const totalExpense = document.querySelector('#total-expense');
-// const tableData = document.querySelector('.table-data');
+
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
 
+    let array = [];
     const addItems = () => {
         const items = form.items.value;
         const date = form.date.value;
         const amount = Number(form.amount.value);        
 
-        table.innerHTML += `
+        array.push(amount);
+
+        // array.forEach(item => {
+        //     console.log(item);
+        // })
+
+        let tableBody =  `
         <tr>
             <td>${items}</td>
             <td>${date}</td>
-            <td>${amount}</td>
+            <td>${array}</td>
         </tr>
         `
+        table.innerHTML += tableBody;
 
-        // totalExpense.addEventListener('click', () => {
-        //     table.innerHTML += `
-        //         <tr>
-        //             <th>Total</th>
-        //             <th></th>
-        //             <th></th>
-        //         </tr>
-        //     `
-        // })
+        console.log(array)
     }
     
     addItems();
@@ -43,3 +46,4 @@ totalExpense.addEventListener('click', () => {
         </tr>
     `
 })
+
