@@ -17,10 +17,6 @@ form.addEventListener('submit', e => {
 
         array.push(amount);
 
-        // array.forEach(item => {
-        //     console.log(item);
-        // })
-
         let tableBody =  `
         <tr>
             <td>${items}</td>
