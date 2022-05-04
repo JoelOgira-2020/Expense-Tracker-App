@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 .text-center {
     text-align: center;
 }
 
 .text-success {
-    color: yellowgreen;
+    color: rgb(231, 235, 225);
 }
 
 .my-2 {
